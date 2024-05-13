@@ -1,4 +1,5 @@
+
 export async function fetchUsers() {
-  const res = await fetch("endpoint")
+  const res = await fetch("/api/users")
   return res.json()
 }

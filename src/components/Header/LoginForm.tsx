@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 
 // Объявление функционального компонента LoginForm
 const LoginForm = () => {
@@ -13,32 +13,39 @@ const LoginForm = () => {
 
     // Возвращение JSX для отображения формы входа
     return (
-        <form onSubmit={handleSubmit}>
-            {/* Поле ввода email */}
-            <label htmlFor="email">Email:</label>
-            <br />
-            <input
-                type="email"
-                id="email"
-                value={email}
-                onChange={(event) => setEmail(event.target.value)}
-                required // Поле обязательно для заполнения
-            />
-            <br />
-            {/* Поле для ввода пароля */}
-            <label htmlFor="password">Пароль:</label>
-            <br />
-            <input
-                type="password"
-                id="password"
-                value={password}
-                onChange={(event) => setPassword(event.target.value)}
-                required // Поле обязательно для заполнения
-            />
-            <br />
-            {/* Кнопка для отправки формы */}
-            <button type="submit">Войти</button>
+        <form action="">
+            <h1>Вход</h1>
+            <input name='email' type="text" placeholder='Enter your email....'/>
+            <input name='password' type="password" placeholder='Enter your password...'/>
+            <button type='submit'>Войти</button>
+
         </form>
+        // <form onSubmit={handleSubmit}>
+        //     {/* Поле ввода email */}
+        //     <label htmlFor="email">Email:</label>
+        //     <br />
+        //     <input
+        //         type="email"
+        //         id="email"
+        //         value={email}
+        //         onChange={(event) => setEmail(event.target.value)}
+        //         required // Поле обязательно для заполнения
+        //     />
+        //     <br />
+        //     {/* Поле для ввода пароля */}
+        //     <label htmlFor="password">Пароль:</label>
+        //     <br />
+        //     <input
+        //         type="password"
+        //         id="password"
+        //         value={password}
+        //         onChange={(event) => setPassword(event.target.value)}
+        //         required // Поле обязательно для заполнения
+        //     />
+        //     <br />
+        //     {/* Кнопка для отправки формы */}
+        //     <button type="submit">Войти</button>
+        // </form>
     );
 };
 

@@ -2,8 +2,10 @@
 
 
 export default function Footer() {
-  return (
+    return (
 
-    <div>Footer</div>
-  )
+        <div className="footer">
+            Footer
+        </div>
+    )
 }

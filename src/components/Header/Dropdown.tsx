@@ -9,11 +9,11 @@ function Dropdown() {
 
   const dropdownContent = (
     <ul className="dropdown-content">
-      <li><NavLink to="maintanance">Обслуживание</NavLink></li>
-      <li><NavLink to="composite">Композитные</NavLink></li>
-      <li><NavLink to="frame">Каркасные</NavLink></li>
-      <li><NavLink to="Concrete">Бетонные</NavLink></li>
-      <li><NavLink to="Adjustable">Регулируемый</NavLink></li>
+      <li><NavLink className="dropdown-item" to="maintanance">Обслуживание</NavLink></li>
+      <li><NavLink className="dropdown-item" to="composite">Композитные</NavLink></li>
+      <li><NavLink className="dropdown-item" to="frame">Каркасные</NavLink></li>
+      <li><NavLink className="dropdown-item" to="Concrete">Бетонные</NavLink></li>
+      <li><NavLink className="dropdown-item" to="Adjustable">Регулируемый</NavLink></li>
     </ul>
   );
 
