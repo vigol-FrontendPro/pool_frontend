@@ -12,13 +12,13 @@ if (container) {
     const root = createRoot(container)
 
     root.render(
-        // <React.StrictMode>
+        <React.StrictMode>
         <Provider store={store}>
 
             <App/>
 
         </Provider>
-        // </React.StrictMode>,
+        </React.StrictMode>,
     )
 } else {
     throw new Error(

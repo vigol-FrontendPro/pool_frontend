@@ -1,6 +1,15 @@
 .box {
-  background-color: lightgoldenrodyellow;
-  border-radius: 20px;
-  margin: 50px;
-  padding: 50px;
+    background-color: lightgoldenrodyellow;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    width: 500px; /* Пример ширины */
 }
+
+.price {
+    font-size: 16px;
+    color: blue;
+    display: block;
+    margin-bottom: 12px;
+}
+

@@ -19,7 +19,7 @@ export const productsSlice = createAppSlice({
       {
         pending: state => {},
         fulfilled: (state, action) => {
-          state.productsList = action.payload.products
+          state.productsList = action.payload
         },
         rejected: state => {},
       },
